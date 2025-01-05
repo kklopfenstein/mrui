@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mrui
+  labels:
+    app: mrui
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mrui
+  template:
+    metadata:
+      labels:
+        app: mrui
+    spec:
+      containers:
+      - name: mrui
+        image: kklopfenstein/mrui:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "production"
