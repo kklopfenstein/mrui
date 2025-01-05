@@ -4,7 +4,7 @@ metadata:
   name: mrui-service
 spec:
   selector:
-    app: mrui-app
+    app: mrui
   ports:
     - protocol: TCP
       port: 3001
