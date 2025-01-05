@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mrui
-        image: kklopfenstein/mrui:latest
+        image: kklopfenstein/mrui:v0
         ports:
         - containerPort: 3000
         env:
